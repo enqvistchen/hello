@@ -1,0 +1,254 @@
+/*navbar*/
+body {
+    margin:0;
+}
+
+.navbar {
+    width:100%;
+    margin: 0;
+    position: fixed;
+    background-color: #f44336;
+    box-shadow: 0px 1px 5px black;
+    display: flex;
+}
+
+.navbar > a {
+    padding: 13px 25px;
+    line-height: 20px;
+    font-size:18px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 490;
+}
+
+.navbar > a:hover{
+    background-color: white;
+    color: black;
+}
+
+.navbar > a:nth-child(1) {
+    background-color: white;
+    color: black;
+}
+
+.navbar > a:nth-child(1):hover{
+    background-color: grey;
+}
+
+a:link {
+    margin: 0;
+}
+
+.header {
+    display: block;
+    background-color: #f44336;
+    padding:100px 0px;
+    width: 100%;
+    text-align: center;
+}
+
+.header > h1 {
+    line-height: 1.5;
+    color: white;
+    font-size: 64px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+.header > h4 {
+    font-size: 24px;
+    color: white;
+    font-family: "Lato", sans-serif;
+    line-height: 1.5;
+}
+
+.header > button {
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    text-shadow: none;
+}
+
+.header > button:hover {
+    color: #fff;
+    background-color: rgb(169,146,255);
+}
+
+.content {
+    /*background-color: white;*/
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.content:nth-child(even) {
+    background: #f1f1f1;
+}
+
+.banner {
+    display: flex;
+    max-width: 980px;
+    margin: auto;
+}
+
+.word {
+    width: 66.66666%;
+}
+.word > h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.5;
+}
+
+.word > h5 {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.word > p {
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #757575;
+}
+
+.banner-image {
+    width: 33.33333%;
+    text-align: center;
+    font-size: 200px;
+    color: #f44336;
+    margin-top: 35px;
+}
+
+.footer {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #fff;
+    background-color: #000;
+    opacity: 0.60;
+}
+
+.footer-image {
+    text-align: center;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    font-size: 24px;
+    font-family: "Lato", sans-serif;
+    color: rgb(115,127,127);
+}
+
+.footer-image > i:hover {
+    color: rgb(85,200,204);
+}
+
+.footer-image > p {
+    font-size: 15px;
+}
+
+.footer-image > p > a {
+    color: rgb(115,127,127);
+}
+
+.navbar > i {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-size: 22px;
+    padding: 13px 20px;
+    color: white;
+    margin: 0;
+    line-height: 20px;
+}
+
+.navbar > i:hover{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-size: 22px;
+    padding: 13px 20px;
+    color: black;
+    background-color: white;
+    margin: 0;
+    line-height: 20px;
+}
+
+.navbarmedia {
+    width:100%;
+    margin: 0;
+    box-shadow: 0px 1px 5px black;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbarmedia > .rwd {
+    padding: 13px 25px;
+    line-height: 20px;
+    font-size:18px;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 490;
+}
+
+.navbarmedia > a:hover{
+    background-color: #f1f1f1;
+}
+/*media style*/
+
+@media screen and (max-width: 580px) {
+    .navbar > .rwd {
+        visibility: hidden;
+    }
+    .banner {
+        display: block;
+        margin: auto;
+    }
+    .word {
+        width: 100%;
+    }
+    .banner-image {
+        width: 100%;
+        text-align: center;
+        font-size: 200px;
+        color: #f44336;
+        margin-top: 35px;
+    }
+    .word > h2,p,h5 {
+        text-align: center;
+        padding: 0px 15px;
+    }
+
+    .navbarmedia {
+        position: absolute;
+        top: 46px;
+        z-index: 10000;
+        box-shadow: none;
+        /*transition: visibility 1s;*/
+    }
+}
+
+@media screen and (min-width: 580px) {
+    .navbar > i {
+        visibility: hidden;
+    }
+
+    .navbarmedia {
+        display: none;
+    }
+
+    .navbarmedia > .rwd {
+        visibility: visible;
+    }
+
+}

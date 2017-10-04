@@ -1,0 +1,189 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration:none;
+    padding:10px;
+}
+
+a:hover {
+    background-color: #B3C3E8;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+/*navbar*/
+
+.navbar {
+    padding: 18px 16px;
+    background-color: #fff;
+    /*flex*/
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*flex*/
+    position: fixed;
+    top:0;
+    z-index: 100;
+    width: 100%;
+    box-shadow: 0px 5px 5px gray;
+}
+
+.topleft {
+    font-family: "Times New Roman", Georgia, Serif;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 4px;
+    box-sizing: inherit;
+    position: relative;
+    left: 20px;
+}
+
+.topright {
+    font-family: "Times New Roman", Georgia, Serif;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 4px;
+    word-spacing: 20px;
+    box-sizing: inherit;
+    position: relative;
+    right: 50px;
+}
+
+/*img*/
+
+.img {
+    background: url("https://www.w3schools.com/w3images/hamburger.jpg") no-repeat center;
+    background-size: cover;
+    max-width: 1600px;
+    height: 800px;
+    min-width: 500px;
+    z-index: -1;
+}
+
+.img > h1 {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+    font-size: 36px!important;
+    font-weight: 400;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+/*content*/
+.content {
+    padding: 20px 180px;
+    margin-top: 20px;
+}
+
+.cont {
+    display: flex;
+}
+
+.contimg {
+    padding: 12px 24px;
+}
+
+.cont > div > h2 {
+    text-align: center;
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.5;
+}
+
+.cont > div > h5 {
+    text-align: center;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+}
+
+.cont > div > p {
+    font-size: 18px;
+    font-family: "Times New Roman", Georgia, Serif;
+}
+
+.text {
+    padding: 0px 30px ;
+}
+
+.text > h4 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.text > p {
+        color: #757575;
+        font-family: "Times New Roman", Georgia, Serif;
+        font-size: 15px;
+        line-height: 1.5;
+}
+
+.inputstyle {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding: 8px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    overflow: visible;
+    font: inherit;
+    margin: 0;
+    box-sizing: inherit;
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+}
+
+.buttonstyle {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    user-select: none;
+    border: none;
+    display: inline-block;
+    outline: 0;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    text-transform: none;
+    font: inherit;
+    margin: 0;
+    box-sizing: inherit;
+    align-items: flex-start;
+}
+
+.footer {
+    background-color: #f1f1f1;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-align: center;
+    display: block;
+    font-family: "Times New Roman", Georgia, Serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
